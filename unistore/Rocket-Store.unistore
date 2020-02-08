@@ -1,0 +1,138 @@
+{
+	"storeInfo": {
+		"title": "Rocket-Store",
+		"author": "RocketRobz",
+		"url": "https://github.com/RocketRobz/Rocket-Store/raw/master/unistore/Rocket-Store.unistore",
+		"file": "sdmc:/3ds/Universal-Updater/stores/Rocket-Store.unistore",
+		"sheet": "sdmc:/3ds/Universal-Updater/stores/Rocket-Store.t3x",
+		"sheetURL": "https://github.com/RocketRobz/Rocket-Store/raw/master/unistore/Rocket-Store.t3x",
+		"iconIndexTop": 0,
+		"displayInformation": false,
+		"description": "RocketRobz's UniStore",
+		"barColor": "#395472",
+		"bgBottomColor": "#262C4D",
+		"bgTopColor": "#60A8C0",
+		"textColor": "#FFFFFF",
+		"selectedColor": "#78C0D8",
+		"unselectedColor": "#4D7684",
+		"version": 0
+	},
+	"storeContent": [
+		{
+		"info": {
+			"title": "Savvy Manager (3dsx)",
+			"version": "2.0.0",
+			"author": "RocketRobz",
+			"description": "Savvy Manager",
+			"fileSize": 2806356
+		},
+		"script": [{
+			"type": "downloadRelease",
+			"repo": "RocketRobz/SavvyManager",
+			"file": "SavvyManager.3dsx",
+			"output": "sdmc:/3ds/SavvyManager.3dsx",
+			"message": "Downloading Savvy Manager..."
+		}]
+	},
+	{
+		"info": {
+			"title": "Savvy Manager (cia)",
+			"version": "2.0.0",
+			"author": "RocketRobz",
+			"description": "Savvy Manager",
+			"fileSize": 2741184
+		},
+		"script": [{
+			"type": "downloadRelease",
+			"repo": "RocketRobz/SavvyManager",
+			"file": "SavvyManager.cia",
+			"output": "sdmc:/SavvyManager.cia",
+			"message": "Downloading Savvy Manager..."
+		},
+		{
+			"type": "installCia",
+			"file": "/SavvyManager.cia",
+			"message": "Installing Savvy Manager..."
+		},
+		{
+			"type": "deleteFile",
+			"file": "sdmc:/SavvyManager.cia",
+			"message": "Deleting unneded file."
+		}]
+	},
+	{
+		"info": {
+			"title": "GodMode9i (Release)",
+			"version": "2.2.1",
+			"author": "RocketRobz",
+			"description": "GodMode9i",
+			"fileSize": 243419
+		},
+		"script": [{
+			"type": "downloadRelease",
+			"repo": "RocketRobz/GodMode9i",
+			"file": "GodMode9i.7z",
+			"output": "sdmc:/GodMode9i.7z",
+			"message": "Downloading GodMode9i..."
+		},
+		{
+			"type": "extractFile",
+			"file": "/GodMode9i.7z",
+			"input": "GodMode9i.cia",
+			"output": "/GodMode9i.cia",
+			"message": "Extracting GodMode9i cia..."
+		},
+		{
+			"type": "installCia",
+			"file": "sdmc:/GodMode9i.cia",
+			"message": "Installing GodMode9i.cia..."
+		},
+		{
+			"type": "deleteFile",
+			"file": "sdmc:/GodMode9i.cia",
+			"message": "Deleting unneded file."
+		},
+		{
+			"type": "deleteFile",
+			"file": "sdmc:/GodMode9i.7z",
+			"message": "Deleting unneded file."
+		}]
+	},
+	{
+		"info": {
+			"title": "GodMode9i (Nightly)",
+			"version": "2.2.1",
+			"author": "RocketRobz",
+			"description": "GodMode9i",
+			"fileSize": 243419
+		},
+		"script": [{
+			"type": "downloadFile",
+			"file": "https://github.com/TWLBot/Builds/raw/master/extras/GodMode9i.7z",
+			"output": "/GodMode9i.7z",
+			"message": "Downloading GodMode9i Nightly..."
+		},
+		{
+			"type": "extractFile",
+			"file": "/GodMode9i.7z",
+			"input": "GodMode9i.cia",
+			"output": "/GodMode9i.cia",
+			"message": "Extracting GodMode9i cia..."
+		},
+		{
+			"type": "installCia",
+			"file": "sdmc:/GodMode9i.cia",
+			"message": "Installing GodMode9i.cia..."
+		},
+		{
+			"type": "deleteFile",
+			"file": "sdmc:/GodMode9i.cia",
+			"message": "Deleting unneded file."
+		},
+		{
+			"type": "deleteFile",
+			"file": "sdmc:/GodMode9i.7z",
+			"message": "Deleting unneded file."
+		}]
+	}]
+}
