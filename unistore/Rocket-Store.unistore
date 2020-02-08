@@ -6,7 +6,6 @@
 		"file": "sdmc:/3ds/Universal-Updater/stores/Rocket-Store.unistore",
 		"sheet": "sdmc:/3ds/Universal-Updater/stores/Rocket-Store.t3x",
 		"sheetURL": "https://github.com/RocketRobz/Rocket-Store/raw/master/unistore/Rocket-Store.t3x",
-		"iconIndexTop": 0,
 		"displayInformation": false,
 		"description": "RocketRobz's UniStore",
 		"barColor": "#395472",
@@ -24,6 +23,9 @@
 			"version": "2.0.0",
 			"author": "RocketRobz",
 			"description": "Savvy Manager",
+			"iconIndex": 0,
+			"posX": 0,
+			"posY": 0,
 			"fileSize": 2806356
 		},
 		"script": [{
@@ -40,6 +42,9 @@
 			"version": "2.0.0",
 			"author": "RocketRobz",
 			"description": "Savvy Manager",
+			"iconIndex": 0,
+			"posX": 0,
+			"posY": 0,
 			"fileSize": 2741184
 		},
 		"script": [{
@@ -62,10 +67,13 @@
 	},
 	{
 		"info": {
-			"title": "GodMode9i (Release)",
+			"title": "GodMode9i CIA (Release)",
 			"version": "2.2.1",
 			"author": "RocketRobz",
 			"description": "GodMode9i",
+			"iconIndex": 1,
+			"posX": 0,
+			"posY": 0,
 			"fileSize": 243419
 		},
 		"script": [{
@@ -100,10 +108,13 @@
 	},
 	{
 		"info": {
-			"title": "GodMode9i (Nightly)",
+			"title": "GodMode9i CIA (Nightly)",
 			"version": "2.2.1",
 			"author": "RocketRobz",
 			"description": "GodMode9i",
+			"iconIndex": 1,
+			"posX": 0,
+			"posY": 0,
 			"fileSize": 243419
 		},
 		"script": [{
@@ -115,7 +126,7 @@
 		{
 			"type": "extractFile",
 			"file": "/GodMode9i.7z",
-			"input": "GodMode9i.cia",
+			"input": "GodMode9i/GodMode9i.cia",
 			"output": "/GodMode9i.cia",
 			"message": "Extracting GodMode9i cia..."
 		},
@@ -133,6 +144,251 @@
 			"type": "deleteFile",
 			"file": "sdmc:/GodMode9i.7z",
 			"message": "Deleting unneded file."
+		}]
+	},
+	{
+		"info": {
+			"title": "GodMode9i NDS (Release)",
+			"version": "2.2.1",
+			"author": "RocketRobz",
+			"description": "GodMode9i",
+			"iconIndex": 1,
+			"posX": 0,
+			"posY": 0,
+			"fileSize": 243419
+		},
+		"script": [{
+			"type": "downloadRelease",
+			"repo": "RocketRobz/GodMode9i",
+			"file": "GodMode9i.7z",
+			"output": "sdmc:/GodMode9i.7z",
+			"message": "Downloading GodMode9i..."
+		},
+		{
+			"type": "extractFile",
+			"file": "/GodMode9i.7z",
+			"input": "GodMode9i.nds",
+			"output": "/GodMode9i.nds",
+			"message": "Extracting GodMode9i nds..."
+		},
+		{
+			"type": "deleteFile",
+			"file": "sdmc:/GodMode9i.7z",
+			"message": "Deleting unneded file."
+		}]
+	},
+	{
+		"info": {
+			"title": "GodMode9i NDS (Nightly)",
+			"version": "2.2.1",
+			"author": "RocketRobz",
+			"description": "GodMode9i",
+			"iconIndex": 1,
+			"posX": 0,
+			"posY": 0,
+			"fileSize": 243419
+		},
+		"script": [{
+			"type": "downloadFile",
+			"file": "https://github.com/TWLBot/Builds/raw/master/extras/GodMode9i.7z",
+			"output": "/GodMode9i.7z",
+			"message": "Downloading GodMode9i Nightly..."
+		},
+		{
+			"type": "extractFile",
+			"file": "/GodMode9i.7z",
+			"input": "GodMode9i/GodMode9i.nds",
+			"output": "/GodMode9i.nds",
+			"message": "Extracting GodMode9i nds..."
+		},
+		{
+			"type": "deleteFile",
+			"file": "sdmc:/GodMode9i.7z",
+			"message": "Deleting unneded file."
+		}]
+	},
+	{
+		"info": {
+			"title": "TWiLight Menu++ (Release)",
+			"version": "11.2.0",
+			"author": "DS-Homebrew",
+			"description": "TWiLight Menu++",
+			"iconIndex": 2,
+			"posX": 0,
+			"posY": 0,
+			"fileSize": 14658927
+		},
+		"script": [{
+			"type": "downloadRelease",
+			"repo": "DS-Homebrew/TWiLightMenu",
+			"file": "TWiLightMenu.7z",
+			"output": "/TWiLightMenu.7z",
+			"message": "Downloading TWiLight Menu++..."
+		},
+		{
+			"type": "extractFile",
+			"file": "/TWiLightMenu.7z",
+			"input": "_nds/",
+			"output": "/_nds/",
+			"message": "Extracting TWiLight Menu++..."
+		},
+		{
+			"type": "extractFile",
+			"file": "/TWiLightMenu.7z",
+			"input": "3DS - CFW users/",
+			"output": "/",
+			"message": "Extracting TWiLight Menu++..."
+		},
+		{
+			"type": "extractFile",
+			"file": "/TWiLightMenu.7z",
+			"input": "DSi&3DS - SD card users/",
+			"output": "/",
+			"message": "Extracting TWiLight Menu++..."
+		},
+		{
+			"type": "installCia",
+			"file": "/TWiLight Menu.cia",
+			"message": "Installing TWiLight Menu++..."
+		},
+		{
+			"type": "installCia",
+			"file": "/TWiLight Menu - Game booter.cia",
+			"message": "Installing TWiLight Menu - Game booter..."
+		},
+		{
+			"type": "deleteFile",
+			"file": "/TWiLight Menu - Game booter.cia"
+		},
+		{
+			"type": "deleteFile",
+			"file": "/TWiLight Menu.cia"
+		},
+		{
+			"type": "deleteFile",
+			"file": "/TWiLightMenu.7z"
+		}]
+	},
+	{
+		"info": {
+			"title": "TWiLight Menu++ (Nightly)",
+			"version": "11.2.0",
+			"author": "DS-Homebrew",
+			"description": "TWiLight Menu++",
+			"iconIndex": 2,
+			"posX": 0,
+			"posY": 0,
+			"fileSize": 14658927
+		},
+		"script": [{
+			"type": "downloadFile",
+			"file": "https://github.com/TWLBot/Builds/raw/master/TWiLightMenu.7z",
+			"output": "/TWiLightMenu.7z",
+			"message": "Downloading TWiLight Menu++ (Nightly)..."
+		},
+		{
+			"type": "extractFile",
+			"file": "/TWiLightMenu.7z",
+			"input": "TWiLightMenu/_nds/",
+			"output": "/_nds/",
+			"message": "Extracting TWiLight Menu++..."
+		},
+		{
+			"type": "extractFile",
+			"file": "/TWiLightMenu.7z",
+			"input": "TWiLightMenu/3DS - CFW users/",
+			"output": "/",
+			"message": "Extracting TWiLight Menu++..."
+		},
+		{
+			"type": "extractFile",
+			"file": "/TWiLightMenu.7z",
+			"input": "TWiLightMenu/DSi&3DS - SD card users/",
+			"output": "/",
+			"message": "Extracting TWiLight Menu++..."
+		},
+		{
+			"type": "installCia",
+			"file": "/TWiLight Menu.cia",
+			"message": "Installing TWiLight Menu++..."
+		},
+		{
+			"type": "installCia",
+			"file": "/TWiLight Menu - Game booter.cia",
+			"message": "Installing TWiLight Menu - Game booter..."
+		},
+		{
+			"type": "deleteFile",
+			"file": "/TWiLight Menu - Game booter.cia"
+		},
+		{
+			"type": "deleteFile",
+			"file": "/TWiLight Menu.cia"
+		},
+		{
+			"type": "deleteFile",
+			"file": "/TWiLightMenu.7z"
+		}]
+	},
+	{
+		"info": {
+			"title": "TWiLight Menu++ (Nightly Lite)",
+			"version": "11.2.0",
+			"author": "DS-Homebrew",
+			"description": "TWiLightMenu++",
+			"iconIndex": 2,
+			"posX": 0,
+			"posY": 0,
+			"fileSize": 14658927
+		},
+		"script": [{
+			"type": "downloadFile",
+			"file": "https://github.com/TWLBot/Builds/raw/master/TWiLightMenu-Lite.7z",
+			"output": "/TWiLightMenu.7z",
+			"message": "Downloading TWiLight Menu++ Lite (Nightly)..."
+		},
+		{
+			"type": "extractFile",
+			"file": "/TWiLightMenu.7z",
+			"input": "TWiLightMenu/_nds/",
+			"output": "/_nds/",
+			"message": "Extracting TWiLight Menu++..."
+		},
+		{
+			"type": "extractFile",
+			"file": "/TWiLightMenu.7z",
+			"input": "TWiLightMenu/3DS - CFW users/",
+			"output": "/",
+			"message": "Extracting TWiLight Menu++..."
+		},
+		{
+			"type": "extractFile",
+			"file": "/TWiLightMenu.7z",
+			"input": "TWiLightMenu/DSi&3DS - SD card users/",
+			"output": "/",
+			"message": "Extracting TWiLight Menu++..."
+		},
+		{
+			"type": "installCia",
+			"file": "/TWiLight Menu.cia",
+			"message": "Installing TWiLight Menu++..."
+		},
+		{
+			"type": "installCia",
+			"file": "/TWiLight Menu - Game booter.cia",
+			"message": "Installing TWiLight Menu - Game booter..."
+		},
+		{
+			"type": "deleteFile",
+			"file": "/TWiLight Menu - Game booter.cia"
+		},
+		{
+			"type": "deleteFile",
+			"file": "/TWiLight Menu.cia"
+		},
+		{
+			"type": "deleteFile",
+			"file": "/TWiLightMenu.7z"
 		}]
 	}]
 }
