@@ -19,6 +19,54 @@
 	"storeContent": [
 		{
 		"info": {
+			"title": "Konotsu Gunner DS (nds)",
+			"version": "",
+			"author": "Yellow Locker, RocketRobz",
+			"description": "Konotsu Gunner DS",
+			"iconIndex": 3,
+			"posX": 0,
+			"posY": 0,
+			"fileSize": 0
+		},
+		"script": [{
+			"type": "downloadRelease",
+			"repo": "RocketRobz/Konotsu-Gunner-DS",
+			"file": "Konotsu-Gunner.nds",
+			"output": "sdmc:/Konotsu-Gunner.nds",
+			"message": "Downloading Konotsu Gunner DS (nds)..."
+		}]
+	},
+	{
+		"info": {
+			"title": "Konotsu Gunner DS (cia)",
+			"version": "",
+			"author": "Yellow Locker, RocketRobz",
+			"description": "Konotsu Gunner DS",
+			"iconIndex": 3,
+			"posX": 0,
+			"posY": 0,
+			"fileSize": 0
+		},
+		"script": [{
+			"type": "downloadRelease",
+			"repo": "RocketRobz/Konotsu-Gunner-DS",
+			"file": "Konotsu-Gunner.cia",
+			"output": "sdmc:/Konotsu-Gunner.cia",
+			"message": "Downloading Konotsu Gunner DS (cia)..."
+		},
+		{
+			"type": "installCia",
+			"file": "/Konotsu-Gunner.cia",
+			"message": "Installing Konotsu Gunner DS (cia)..."
+		},
+		{
+			"type": "deleteFile",
+			"file": "sdmc:/Konotsu-Gunner.cia",
+			"message": "Delete unneded file..."
+		}]
+	},
+	{
+		"info": {
 			"title": "Savvy Manager (3dsx)",
 			"version": "2.0.0",
 			"author": "RocketRobz",
